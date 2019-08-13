@@ -45,12 +45,14 @@ body {
         text-decoration: none;
         color: #fff;
         display: block;
-        border: 1px solid #fff;
+        border: 1px solid rgba(255, 255, 255, 0);
+        box-sizing: border-box;
         margin: 0 auto;
         height: 50px;
         line-height: 50px;
         border-radius: 5px;
         box-shadow: #000 0 5px 0;
+        background: linear-gradient(to right, #06BEB6, #283C86);
         width: 80%; }
 
 /*# sourceMappingURL=style.css.map */
