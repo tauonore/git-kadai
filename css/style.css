@@ -1,3 +1,16 @@
-
+body {
+  width: 100vw; }
+  body header {
+    height: 80px;
+    line-height: 80px; }
+    body header .head_adjust {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 50px; }
+      body header .head_adjust nav ul {
+        display: flex; }
+        body header .head_adjust nav ul li {
+          margin-left: 50px; }
 
 /*# sourceMappingURL=style.css.map */
