@@ -137,6 +137,7 @@ body {
         }
         // About_us　ここまで
 
+        // Newsここから
         #News {
             background-image: url(../image/Web/0748571d9c0be483e5ac9cb24203a241_m@3x.png);
             background-size: cover;
@@ -173,6 +174,23 @@ body {
                 }
             }
         }
+        // Newsここまで
+        // ChangeLifeここから
+        #ChangeLife {
+            .adjust {
+                @include boxAdjust();
+                padding: 200px 0;
+                width: 30%;
+                h3 {
+                    @include title();
+                    padding-bottom: 50px;
+                }
+                a {
+                    @include Anchor();
+                }
+            }
+        }
+        // ChangeLifeここまで
     }
     // ここまで
 
