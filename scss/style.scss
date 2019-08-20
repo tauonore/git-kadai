@@ -9,10 +9,6 @@ body {
         display: flex;
         justify-content: space-between;
     }
-    @mixin mainAdjust {
-        @include adjust();
-        margin-bottom: 80px;
-    }
     @mixin title {
         font-weight: 600;
     }
@@ -32,6 +28,17 @@ body {
     }
     @mixin sideAdjust {
         padding: 0 10%;
+    }
+    @mixin boxAdjust {
+        @include adjust();
+        display: block;
+        text-align: center;
+    }
+    @mixin boxPlace {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include sideAdjust();
     }
     // 
 
@@ -68,7 +75,7 @@ body {
         #top {
             width: 100vw;
             height: 80vh;
-            background-image: url("../image/Web 1366 – 1/2469c14eccf9a623eb7a2674b9f9c333_m (2)@3x.png");
+            background-image: url("../image/Web/2469c14eccf9a623eb7a2674b9f9c333_m (2)@3x.png");
             background-size: cover;
             position: relative;
             .heading {
@@ -98,19 +105,15 @@ body {
         // About_us　ここから
         #About_us {
             background-color: #F8F8F8;
+            padding-bottom: 80px;
             .adjust {
-                @include mainAdjust();
-                display: block;
-                text-align: center;
+                @include boxAdjust();
                 h2 {
                     @include title();
                     padding: 80px;
                 }
                 .box {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    @include sideAdjust();
+                    @include boxPlace();
                     .feature {
                         width: 30%;
                         background-color: #fff;
@@ -133,6 +136,43 @@ body {
             }
         }
         // About_us　ここまで
+
+        #News {
+            background-image: url(../image/Web/0748571d9c0be483e5ac9cb24203a241_m@3x.png);
+            background-size: cover;
+            padding-bottom: 80px;
+            .adjust {
+                @include boxAdjust();
+                h2 {
+                    @include title();
+                    padding: 80px;
+                    color: $white;
+                }
+                .box {
+                    @include boxPlace();
+                    .card {
+                        width: 30%;
+                        img {
+                            width: 100%;
+                        }
+                        .textbox {
+                            padding: 20px;
+                            text-align: left;
+                            background-color: $white;
+                            .date {
+                                font-size: 10px;
+                                font-weight: 600;
+                                padding-bottom: 10px;
+                            }
+                            h3 {
+                                @include title();
+                                padding-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     // ここまで
 
