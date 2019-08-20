@@ -114,6 +114,9 @@ body {
                     @include Anchor();
                     width: 80%;
                 }
+                @include sm() {
+                    width: 50%;
+                }
             }
         }
         // top ここまで
@@ -146,6 +149,9 @@ body {
                             border: 1px solid black;
                             margin: 0 auto;
                             margin-bottom: 20px;
+                        }
+                        @include sm() {
+                            width: 45%;
                         }
                     }
                 }
@@ -186,6 +192,12 @@ body {
                                 padding-bottom: 20px;
                             }
                         }
+                        @include sm() {
+                            width: 100%;
+                            .textbox {
+                                margin-bottom: 40px;
+                            }
+                        }
                     }
                 }
             }
@@ -203,6 +215,9 @@ body {
                 }
                 a {
                     @include Anchor();
+                }
+                @include sm() {
+                    width: 50%;
                 }
             }
         }

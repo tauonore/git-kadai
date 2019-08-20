@@ -56,6 +56,9 @@ body {
         box-shadow: #000 0 5px 0;
         background: linear-gradient(to right, #06BEB6, #283C86);
         width: 80%; }
+      @media (max-width: 600px) {
+        body main #top .heading {
+          width: 50%; } }
   body main #About_us {
     background-color: #F8F8F8;
     padding-bottom: 80px; }
@@ -88,6 +91,9 @@ body {
             border: 1px solid black;
             margin: 0 auto;
             margin-bottom: 20px; }
+          @media (max-width: 600px) {
+            body main #About_us .adjust .box .feature {
+              width: 45%; } }
   body main #News {
     background-image: url(../image/Web/0748571d9c0be483e5ac9cb24203a241_m@3x.png);
     background-size: cover;
@@ -122,6 +128,11 @@ body {
             body main #News .adjust .box .card .textbox h3 {
               font-weight: 600;
               padding-bottom: 20px; }
+          @media (max-width: 600px) {
+            body main #News .adjust .box .card {
+              width: 100%; }
+              body main #News .adjust .box .card .textbox {
+                margin-bottom: 40px; } }
   body main #ChangeLife .adjust {
     margin: 0 auto;
     display: flex;
@@ -146,6 +157,9 @@ body {
       border-radius: 5px;
       box-shadow: #000 0 5px 0;
       background: linear-gradient(to right, #06BEB6, #283C86); }
+    @media (max-width: 600px) {
+      body main #ChangeLife .adjust {
+        width: 50%; } }
   body footer .foot_adjust {
     margin: 0 auto;
     display: flex;
