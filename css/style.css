@@ -18,6 +18,9 @@ body {
         display: flex; }
         body header .head_adjust nav ul li {
           margin-left: 50px; }
+      @media (max-width: 600px) {
+        body header .head_adjust nav {
+          display: none; } }
   body main #top {
     width: 100vw;
     height: 80vh;

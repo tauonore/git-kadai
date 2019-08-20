@@ -1,6 +1,10 @@
 // color list
 $white: #fff;
-// 
+
+// breakpoint 
+$small: 600px;
+
+// bodyここから
 body {
     width: 100vw;
     // mixin list
@@ -40,6 +44,15 @@ body {
         flex-wrap: wrap;
         @include sideAdjust();
     }
+
+    // responsive mixin listここから
+    @mixin sm {
+        @media (max-width: ($small)) {
+            @content;
+        }
+    }
+    // responsive mixin listここまで
+
     // 
 
     // header　ここから
@@ -62,6 +75,9 @@ body {
                     li {
                         margin-left: 50px;
                     }
+                }
+                @include sm() {
+                    display: none;
                 }
             }
 
