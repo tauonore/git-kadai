@@ -63,7 +63,7 @@ body {
               color: #000; }
         body #sp_nav.active {
           transform: translateY(0%);
-          position: fixed;
+          position: absolute;
           top: 80px; }
         body #sp_nav.close {
           transform: translateY(-100%); }

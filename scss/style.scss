@@ -142,7 +142,7 @@ body {
                 }
                 &.active {
                     transform: translateY(0%);
-                    position: fixed;
+                    position: absolute;
                     top: 80px;
                 }
                 &.close {
