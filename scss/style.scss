@@ -28,7 +28,7 @@ body {
         line-height: 50px;
         border-radius: 5px;
         box-shadow: #000 0 5px 0;
-        background: linear-gradient(to right, #06BEB6, #283C86)
+        background: linear-gradient(to right, #06BEB6, #283C86);
     }
     @mixin sideAdjust {
         padding: 0 10%;
@@ -53,9 +53,6 @@ body {
     }
     // responsive mixin listここまで
 
-    // mixin listここまで
-
-    // ハンバーガーメニューここから
     // ハンバーガーメニュー
     @mixin hamburger{
         display: block;
@@ -73,7 +70,9 @@ body {
     @mixin open_animation {
         transition: transform 0.3s 0.1s ease;            
     }
+    // mixin listここまで
 
+    // ハンバーガーメニューここから
     .menu {
         display: none;
         @include sm {
@@ -123,12 +122,11 @@ body {
                 height: 100vh;
                 display: block;
                 background-color: rgba(255, 255, 255, 0.7);
-                position: fixed;
-                top: 80px;
-                right: 0;
+                position: absolute;
+                top: 0;
                 z-index: 3;
                 padding-top: 70px;
-                transform: translateX(100%);
+                transform: translateY(-100%);
                 transition: transform .5s 0s ease;
                 text-align: center;
                 ul {
@@ -143,10 +141,12 @@ body {
                     }
                 }
                 &.active {
-                    transform: translateX(0%);
+                    transform: translateY(0%);
+                    position: fixed;
+                    top: 80px;
                 }
                 &.close {
-                    transform: translateX(100%);
+                    transform: translateY(-100%);
                 }
                 a {
                     @include Anchor();
